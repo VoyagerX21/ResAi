@@ -68,7 +68,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Model files (optional, if version control needed use LFS)
-*.safetensor
 *.pth
 *.pkl
 *.joblib
