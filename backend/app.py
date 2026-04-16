@@ -1,11 +1,13 @@
 from pathlib import Path
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 from model import load_model
 
 
 app = Flask(__name__)
+CORS(app)
 BASE_DIR = Path(__file__).resolve().parent
 model = load_model(BASE_DIR / "model.safetensor")
 
