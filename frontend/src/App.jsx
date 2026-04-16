@@ -9,7 +9,7 @@ const metricImages = [
 ];
 
 async function submitEssay(essay) {
-  const response = await fetch('/submit', {
+  const response = await fetch('https://resai-8vaz.onrender.com/submit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
